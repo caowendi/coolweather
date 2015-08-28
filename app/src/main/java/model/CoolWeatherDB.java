@@ -34,7 +34,7 @@ public class CoolWeatherDB {
         return coolWeatherDB;
     }
 
-    private void saveProvince(Province province) {
+    public void saveProvince(Province province) {
         if (province != null){
             ContentValues values = new ContentValues();
             values.put("Province_name", province.getProvinceName());
